@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Jet pack</string>
+    <string name="none">未知</string>
+    <string name="pre">上一首</string>
+    <string name="start">开始</string>
+    <string name="next">下一首</string>
+    <string name="amount">售价：</string>
+</resources>

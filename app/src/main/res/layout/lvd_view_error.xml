@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <import type="com.sd.jetpack.livedata_viewmodel_databing.LvdViewModel" />
+
+        <import type="com.sd.jetpack.livedata_viewmodel_databing.LoadState" />
+
+        <import type="com.sd.jetpack.livedata_viewmodel_databing.Util"/>
+
+        <variable
+            name="viewModel"
+            type="LvdViewModel" />
+
+    </data>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:src="@color/Green"
+            android:layout_width="80dp"
+            android:layout_height="80dp" />
+
+        <TextView
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/tv_hint"
+            android:text="@{Util.getHintString(viewModel.loadState)}"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</layout>
